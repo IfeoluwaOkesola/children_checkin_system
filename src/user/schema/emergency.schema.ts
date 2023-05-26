@@ -3,16 +3,16 @@ import {Schema, Prop, SchemaFactory} from '@nestjs/mongoose'
 
 @Schema()
 export class EmergencyContact{
-    @Prop()
+    @Prop({required: true})
     name: string;
 
-    @Prop()
+    @Prop({required: true})
     relationship: string;
 
-    @Prop()
+    @Prop({required: true})
     phoneNumber: number;
 
-    @Prop()
+    @Prop({required: true})
     homeAddress: string;
 }
 

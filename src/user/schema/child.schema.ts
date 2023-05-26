@@ -3,14 +3,14 @@
 import { Schema, Prop, SchemaFactory } from "@nestjs/mongoose";
 
 @Schema()
-export class Children{
-    @Prop()
+export class Child{
+    @Prop({required: true})
     name: string;
 
-    @Prop()
+    @Prop({required: true})
     dob: Date;
 
-    @Prop()
+    @Prop({required: true})
     picture: string;
 
     @Prop()
@@ -20,4 +20,4 @@ export class Children{
 
 }
 
-export const ChildrenSchema = SchemaFactory.createForClass(Children)
+export const ChildSchema = SchemaFactory.createForClass(Child)
