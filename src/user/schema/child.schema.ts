@@ -5,7 +5,13 @@ import { Schema, Prop, SchemaFactory } from "@nestjs/mongoose";
 @Schema()
 export class Child{
     @Prop({required: true})
-    name: string;
+    firstName: string;
+
+    @Prop({required: true})
+    lastName: string;
+
+    @Prop({required: true})
+    middleName: string;
 
     @Prop({required: true})
     dob: Date;

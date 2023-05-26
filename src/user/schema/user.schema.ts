@@ -11,10 +11,22 @@ import { EmergencyContact, EmergencyContactSchema } from "./emergency.schema";
 @Schema()
 export class User{
     @Prop()
-    motherName: string;
+    motherFirstName: string;
 
     @Prop()
-    fatherName: string;
+    motherMiddleName: string;
+
+    @Prop()
+    motherLastName: string;
+
+    @Prop()
+    fatherFirstName: string;
+
+    @Prop()
+    fatherMiddleName: string;
+
+    @Prop()
+    fatherLastName: string;
 
     @Prop()
     motherNumber: number;
@@ -24,6 +36,9 @@ export class User{
 
     @Prop()
     homeAddress: string;
+
+    @Prop()
+    churchBranch: string;
 
     @Prop({type: ChildSchema})
     children: Child;

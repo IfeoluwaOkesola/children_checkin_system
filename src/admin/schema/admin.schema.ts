@@ -4,13 +4,16 @@ import {Schema, Prop, SchemaFactory} from '@nestjs/mongoose'
 @Schema()
 export class Admin{
     @Prop({required: true})
-    name: string;
+    firstName: string;
 
     @Prop({required: true})
-    department: string;
+    lastName: string;
 
     @Prop({required: true})
-    position: string
+    department: string; //samuel's club e.t.c
+
+    @Prop({required: true})
+    position: string; //teacher, pastor, e.t.c
 }
 
 
