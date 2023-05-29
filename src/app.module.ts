@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -6,6 +7,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule } from '@nestjs/config';
 import { AdminModule } from './admin/admin.module';
 import { RecordModule } from './record/record.module';
+
 
 @Module({
   imports: [
@@ -17,6 +19,7 @@ import { RecordModule } from './record/record.module';
     UserModule,
     AdminModule,
     RecordModule,
+
   ],
   controllers: [AppController],
   providers: [AppService],

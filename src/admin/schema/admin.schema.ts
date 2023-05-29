@@ -14,6 +14,9 @@ export class Admin{
 
     @Prop({required: true})
     position: string; //teacher, pastor, e.t.c
+
+    @Prop({required: true})
+    password: string;
 }
 
 
