@@ -7,6 +7,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule } from '@nestjs/config';
 import { AdminModule } from './admin/admin.module';
 import { RecordModule } from './record/record.module';
+import { ChildModule } from './child/child.module';
+import { EmergencyContactModule } from './emergency-contact/emergency-contact.module';
 
 
 @Module({
@@ -19,6 +21,8 @@ import { RecordModule } from './record/record.module';
     UserModule,
     AdminModule,
     RecordModule,
+    ChildModule,
+    EmergencyContactModule,
 
   ],
   controllers: [AppController],

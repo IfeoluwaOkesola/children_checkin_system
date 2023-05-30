@@ -2,9 +2,9 @@
 
 import {Schema, Prop, SchemaFactory} from '@nestjs/mongoose'
 import { Session } from './session.schema'
-import { Child } from 'src/user/schema/child.schema'
 import { Event } from './event.schema'
 import * as mongoose from 'mongoose'
+import { Child } from 'src/child/schema/child.schema'
 
 @Schema({
     timestamps: true,

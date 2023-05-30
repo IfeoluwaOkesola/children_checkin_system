@@ -1,8 +1,9 @@
 /* eslint-disable prettier/prettier */
 
 import { Schema, Prop, SchemaFactory } from "@nestjs/mongoose";
-import { Child, ChildSchema } from "./child.schema";
-import { EmergencyContact, EmergencyContactSchema } from "./emergency.schema";
+import { Child, ChildSchema } from "src/child/schema/child.schema";
+import { EmergencyContact, EmergencyContactSchema } from "src/emergency-contact/schema/emergency.schema";
+
 
 
 

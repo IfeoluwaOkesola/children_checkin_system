@@ -14,7 +14,7 @@ export class AdminController {
     
     @Post()
     async createAdmin(
-        admin: CreateAdminDto,
+      @Body()  admin: CreateAdminDto,
     ): Promise<Admin>{
         return this.adminService.create(admin)
     }

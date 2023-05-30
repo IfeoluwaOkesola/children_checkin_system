@@ -1,7 +1,8 @@
 /* eslint-disable prettier/prettier */
 import {Schema, Prop, SchemaFactory} from '@nestjs/mongoose'
-import { Child } from 'src/user/schema/child.schema'
+import { Child } from 'src/child/schema/child.schema';
 import * as mongoose from 'mongoose'
+
 
 @Schema({
     timestamps: true,
